@@ -1,0 +1,39 @@
+/* custom.css */
+.arrow-top::before {
+ content: '';
+ position: absolute;
+ top: -10px; /* Adjust the position as needed */
+ left: 20%; /* Center the arrow */
+ transform: translateX(-50%);
+ border-left: 10px solid transparent;
+ border-right: 10px solid transparent;
+ border-bottom: 10px solid #9F78FF; /* Adjust the color as needed */
+}
+
+/* Define the hover effect */
+.icon:hover {
+ color:#9F78FF;
+}
+
+/* Define the rotation animation */
+@keyframes flip {
+ from {
+    transform: rotateY(0deg);
+ }
+ to {
+    transform: rotateY(180deg);
+ }
+}
+
+/* Apply the animation to the icon on hover */
+.icon:hover {
+ animation: flip 0.4s linear;
+ 
+}
+/* for the logo */
+.img{
+   width:250px;
+   height:200px;
+   margin: 0;
+}
+

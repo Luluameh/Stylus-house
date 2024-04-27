@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+}
+
+.navbar {
+  background-color: #ffff; /* Set background color for the navbar */
+  padding: 10px; /* Add padding for the navbar */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo  {
+  width: 100px; 
+  height: auto; 
+  border: 100% solid;
+  border-radius: 50%;
+  object-fit: contain; 
+}

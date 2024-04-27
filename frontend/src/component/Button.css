@@ -1,0 +1,109 @@
+.btn {
+    background: #9F78FF;
+    text-transform: capitalize;
+    padding: 27px 44px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 18px;
+    display: inline-block;
+    line-height: 1;
+    -moz-user-select: none;
+    letter-spacing: 1px;
+    line-height: 0;
+    margin-bottom: 0;
+    cursor: pointer;
+    transition: color 0.4s linear;
+    position: relative;
+    z-index: 1;
+    border: 0;
+    overflow: hidden;
+    margin: 0;
+    border-radius: 4px
+}
+
+@media (max-width: 575px) {
+    .btn {
+        padding:22px 24px;
+        font-size: 16px
+    }
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 101%;
+    height: 101%;
+    background: #8c6ae4;
+    z-index: 1;
+    border-radius: 5px;
+    transition: transform 0.5s;
+    transition-timing-function: ease;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+    transform: scaleX(0);
+    border-radius: 0px
+}
+
+.btn:hover::before {
+    transform: scaleX(1);
+    color: #fff !important;
+    z-index: -1
+}
+
+.btn.focus,.btn:focus {
+    outline: 0;
+    box-shadow: none
+}
+
+.btn.focus,.btn:focus {
+    outline: 0;
+    box-shadow: none
+}
+
+/** for the brwse more*/
+.border-btn {
+    border: 1px solid #9F78FF;
+    color: #9F78FF;
+    background: none;
+    border-radius: 5px;
+    text-transform: capitalize;
+    padding: 17px 42px;
+    -moz-user-select: none;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+    position: relative;
+    transition: color 0.4s linear;
+    position: relative;
+    overflow: hidden;
+    margin: 0
+}
+.border-btn::before {
+    border: 1px solid transparent;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 101%;
+    height: 101%;
+    background: #9F78FF;
+    z-index: -1;
+    transition: transform 0.5s;
+    transition-timing-function: ease;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+    transform: scaleY(0);
+    border-radius: 0
+}
+
+.border-btn:hover::before {
+    transform: scaleY(1);
+    border: 1px solid transparent;
+    color: #fff
+}

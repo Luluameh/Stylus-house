@@ -1,0 +1,29 @@
+.crop-image {
+ position: relative;
+}
+
+.crop-image::before,
+.crop-image::after {
+ content: '';
+ position: absolute;
+ left: 0;
+ right: 0;
+ height: 10px; /* Adjust the height of the cut */
+ background: #fff; /* Color of the cut */
+}
+
+.crop-image::before {
+ top: 25%; /* Position of the first cut */
+}
+
+.crop-image::after {
+ bottom: 25%; /* Position of the second cut */
+}
+.crop-image .third-cut {
+ position: absolute;
+ left: 0;
+ right: 0;
+ height: 10px; /* Adjust the height of the cut */
+ background: #fff; /* Color of the cut */
+ top: 50%; /* Position of the third cut */
+}

@@ -1,0 +1,36 @@
+/* Shopnow.css */
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s ease;
+  color: #fff;
+  padding:25px;
+  bottom: 0;
+  left: 0;
+}
+
+.overlay:hover {
+  background-color: rgba(29, 37, 71, 0.5); /* Darker overlay on hover */
+  
+}
+
+.overlay h1 {
+  transition: transform 0.3s ease;
+}
+
+.overlay:hover h1 {
+  transform: translateY(-50%); /* Shutter up effect on hover */
+}
+
+.section-tittle h2 {
+    font-size: 70px;
+    display: block;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 4px
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .section-tittle h2 {
+        font-size:50px
+    }
+}

@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  font-family: 'Poppins' ;
+  height: 100vh;
+}
+.image {
+  width: 150px; 
+  overflow: hidden;
+  padding:4px;
+}
+
+.image img {
+  width: 100px; /* Set the width of the logo image */
+  height: auto; /* Maintain aspect ratio */
+  border: 100% solid;
+  object-fit: contain; 
+}
